@@ -9,10 +9,14 @@
     "experimentalDecorators": true,
     "lib": ["dom", "ES2021"],
     "module": "es2020",
+    // "moduleResolution": "node",
+    // "preserveConstEnums": true,
     "skipLibCheck": true,
     "strictNullChecks": true,
     "target": "es2019",
-    "sourceMap": true
+    "sourceMap": true //? відповідає за дебаггінг
+    // "noEmitOnError": true,  //? → не компілює *.js файл, якщо є помилка в *.ts файлі
+    // "removeComments": true, //? → при компіляції видаляє коментарі в коді
   },
   "include": ["**/*.ts"]
 }

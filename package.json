@@ -1,11 +1,24 @@
 {
   "name": "typescript-homework-module-2",
   "version": "1.0.0",
-  "description": "",
+  "description": "Метою цих домашніх завдань є закріплення навичок роботи з базовими типами TypeScript. Практика з такими типами, як number, string, boolean, null, undefined, unknown, any, а також кортежами, переліками (enum) та об'єднаннями типів.",
   "keywords": [],
-  "author": "",
+  "author": "Yuriy",
   "license": "ISC",
   "dependencies": {
     "typescript": "^5.1.5"
-  }
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "web-dev-server --node-resolve --open --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yuriy-o/typescript-hw-02.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yuriy-o/typescript-hw-02/issues"
+  },
+  "homepage": "https://github.com/yuriy-o/typescript-hw-02#readme"
 }
