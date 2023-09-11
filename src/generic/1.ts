@@ -11,29 +11,21 @@
 //   });
 // }
 
-
 // getPromise<[string, number]>()
 //   .then((data) => {
-//     console.log(data); 
+//     console.log(data);
 //   });
-
 
 //? V2 → помилки нема, але під сумнивом вірність вирішення завдання
 
-  function getPromise() {
-  return new Promise<[string, number]>((resolve) => {
+function getPromise() {
+  return new Promise<[string, number]>(resolve => {
     resolve(['Text', 50]);
   });
 }
 
-getPromise()
-  .then((data) => {
-    console.log(data);
-  });
+getPromise().then(data => {
+  console.log(data);
+});
 
-
-
-
-
-export { };
-
+export {};
