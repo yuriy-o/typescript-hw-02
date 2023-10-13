@@ -10,26 +10,12 @@ export enum UserRole {
 }
 
 // Замініть наступний код на версію за допомогою Record
-const RoleDescription: Record<UserRole, string> = {
+type RoleDescription = Record<UserRole, string>;
+
+const roleDescription: RoleDescription = {
   [UserRole.admin]: 'Admin User',
   [UserRole.editor]: 'Editor User',
   [UserRole.guest]: 'Guest User',
 };
-
-//? Ця версія не вірна??
-// const RoleDescription: Record<UserRole, string> = {
-//   admin: 'Admin User',
-//   editor: 'Editor User',
-//   guest: 'Guest User',
-// };
-
-//! v2 → з додатковою зміною (і схоже треба теж брати дані з об'єкта UserRole)
-// type RoleDescription = Record<UserRole, string>;
-
-// const roleDescription: RoleDescription = {
-//   admin: 'Admin User',
-//   editor: 'Editor User',
-//   guest: 'Guest User',
-// };
 
 export {};

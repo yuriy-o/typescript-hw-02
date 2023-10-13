@@ -18,7 +18,7 @@
 
 //? V2 → помилки нема, але під сумнивом вірність вирішення завдання
 
-function getPromise() {
+function getPromise(): Promise<[string, number]> {
   return new Promise<[string, number]>(resolve => {
     resolve(['Text', 50]);
   });
